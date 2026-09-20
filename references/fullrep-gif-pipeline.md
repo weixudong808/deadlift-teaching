@@ -42,10 +42,10 @@
 ①起始位 ②中间位 ③站立位 ④下落位（尾注指向⑤）→ **⑤完整动作演示**（正/侧 GIF 并排，浏览器自动播放；PNG 里显示首帧）→ 金句/三大坑页脚。
 - ①-④ 为教练已认可内容，**改版不许动**（小卫原则：已拍部分不能动）
 - 渲染：`chromium-browser --headless --disable-gpu --no-sandbox --screenshot=out.png --window-size=1080,6000 --hide-scrollbars file:///<html>` → 内容行裁底
-- 模板内 GIF 路径写死 /tmp/dl-teach/，换素材记得同步改
+- 模板内图片/GIF 用相对路径 `../assets/`，渲染时直接 file:// 打开 templates/tutorial.html 即可
 
-## 待办（等小卫确认输出格式后）
+## 定稿记录（2026-09-20 全部完成）
 
-1. 去掉 SKILL.md 描述里的"待验收"标记，版本升 1.0.0
-2. form-analysis 视频路由加一条：教学类请求 → 本 skill
-3. 素材合规：B/C 是教练自拍（无水印）可公开；日后换外部素材按 form-analysis 教学图抽帧模式的合规检查走
+1. ✅ SKILL.md 去"待验收"，v1.0.0（小卫验收："以后只要说教我做硬拉，就按着这个输出"）
+2. ✅ form-analysis 路由：硬拉教学 → 本 skill；教学图抽帧分支仅非硬拉动作
+3. ✅ 素材合规：A/B/C 均教练自拍无水印；skill 独立仓库已公开（github.com/weixudong808/deadlift-teaching，MIT）。日后换外部素材按 form-analysis 教学图抽帧模式的合规检查走
